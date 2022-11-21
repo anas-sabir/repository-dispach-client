@@ -3,7 +3,7 @@ name: CI
 on: [repository_dispatch, push]
 
 jobs:
-  build:
+  test-dispatch:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,4 +13,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo triggered by another ,
-          echo test, test, test ...
+          echo test
